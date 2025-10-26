@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+1<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 11 Quiz - Test Your Knowledge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Windows 11 Quiz</h1>
+            <p>Test your knowledge of Windows 11 features and functionality!</p>
+        </header>
+
+        <div class="quiz-container" id="quiz-container">
+            <div class="quiz-header">
+                <div class="quiz-info">
+                    <span class="question-counter">Question <span id="current-question">1</span> of <span id="total-questions">10</span></span>
+                    <div class="progress-bar">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                </div>
+                <div class="score-display">
+                    Score: <span id="score">0</span>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <h2 class="question" id="question">Loading question...</h2>
+                <div class="options-container" id="options-container">
+                    <!-- Options will be dynamically generated -->
+                </div>
+            </div>
+
+            <div class="quiz-controls">
+                <button class="btn btn-secondary" id="prev-btn" disabled>Previous</button>
+                <button class="btn btn-primary" id="next-btn">Next</button>
+                <button class="btn btn-success" id="submit-btn" style="display: none;">Submit Quiz</button>
+            </div>
+        </div>
+
+        <div class="results-container" id="results-container" style="display: none;">
+            <div class="results-content">
+                <h2>Quiz Complete!</h2>
+                <div class="final-score">
+                    <h3>Your Score: <span id="final-score">0</span>/<span id="max-score">10</span></h3>
+                    <div class="score-percentage" id="score-percentage">0%</div>
+                </div>
+                <div class="score-message" id="score-message">
+                    <!-- Score message will be displayed here -->
+                </div>
+                <div class="quiz-summary" id="quiz-summary">
+                    <!-- Quiz summary will be displayed here -->
+                </div>
+                <button class="btn btn-primary" id="restart-btn">Take Quiz Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
